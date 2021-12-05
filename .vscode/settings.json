@@ -3,6 +3,8 @@
         "Array_as_Abstract_Datatype.C": "cpp",
         "Array_as_Abstract_Datatype1.C": "cpp",
         "operations_on_arrays.C": "cpp",
-        "Insertion_operation_arrays.C": "cpp"
+        "Insertion_operation_arrays.C": "cpp",
+        "deletion_operation_arrays.C": "cpp",
+        "linear_search.C": "cpp"
     }
 }
