@@ -5,6 +5,10 @@
         "operations_on_arrays.C": "cpp",
         "Insertion_operation_arrays.C": "cpp",
         "deletion_operation_arrays.C": "cpp",
-        "linear_search.C": "cpp"
+        "linear_search.C": "cpp",
+        "Binary_Search.C": "cpp",
+        "linked_list.C": "cpp",
+        "linked_list1.C": "cpp",
+        "linked_list_insertion.C": "cpp"
     }
 }

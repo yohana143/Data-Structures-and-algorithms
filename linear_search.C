@@ -17,6 +17,7 @@ int linearsearch(int arr[],int size,int x)
             return i;
         }
     }
+    
     return -1;
 }
 int main()
