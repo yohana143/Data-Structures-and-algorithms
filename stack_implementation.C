@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct stack
+{
+    int *arr;
+    int top;
+    int size;
+};
+int display(struct stack *ptr)
+{
+    printf("The elements of the stack are %d: ", ptr->arr);
+}
+int isEmpty(struct stack *ptr)
+{
+    if (ptr->top == -1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+int isFull(struct stack *ptr)
+{
+    if (ptr->top == ptr->size - 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+void push(struct stack *ptr, int data)
+{
+    if (isFull(ptr))
+    {
+        printf("Stack overflow ! You cannot insert %d into the stack\n");
+    }
+    else
+    {
+        ptr->top++;
+        ptr->arr[ptr->top] = data;
+    }
+}
+void pop(struct stack *ptr)
+{   
+    if(isEmpty(ptr))
+{
+        printf("stack underflow !");
+}
+else{
+        int val = ptr->arr[ptr->top];
+        ptr->top--;
+}
+}
+int main()
+{
+    struct stack *s = (struct stack *)malloc(sizeof(struct stack));
+    s->size = 20; // or s->size=20;
+    s->top = -1;  // or s->top=-1;
+    s->arr = (int *)malloc(s->size * sizeof(int));
+    printf("The stack is created\n");
+    printf("%d\n", isFull(s));
+    printf("%d\n", isEmpty(s));
+    push(s, 30);
+    printf("%d\n", isFull(s));
+    printf("%d\n", isEmpty(s));
+    pop(s);
+    printf("%d\n", isFull(s));
+    printf("%d\n", isEmpty(s));
+    display(s);
+}

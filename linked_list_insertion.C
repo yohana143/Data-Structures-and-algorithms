@@ -13,6 +13,7 @@ void linkedlisttraversal(struct Node *ptr)
     }
     printf("\n");
 }
+//CASE 1
 struct Node * insertatbeginning(struct Node *head,int data)
 {
     struct Node *ptr=(struct Node *)malloc(sizeof(struct Node));
@@ -20,6 +21,7 @@ struct Node * insertatbeginning(struct Node *head,int data)
     ptr->data=data;
     return ptr;
 }
+//CASE 2
 struct Node * insertinbetween(struct Node * head,int data,int index)
 {
     struct Node *ptr=(struct Node *)malloc(sizeof(struct Node));
@@ -34,10 +36,10 @@ struct Node * insertinbetween(struct Node * head,int data,int index)
     ptr->next=p->next;
     p->next=ptr;
 }
+//CASE 3
 struct Node * insertatend(struct Node * head,int data)
 {
     struct Node * ptr=(struct Node *)malloc(sizeof(struct Node));
-    
     struct Node *p=head;
      ptr->data=data;
     int i=0;
@@ -49,6 +51,15 @@ struct Node * insertatend(struct Node * head,int data)
     p->next=ptr;
     ptr->next=NULL;
     return ptr;
+}
+//CASE 4
+struct  Node *insertafternode(struct Node * head,struct Node * prevnode,int data)
+{
+    struct Node *ptr=(struct Node *)malloc(sizeof(struct Node));
+    ptr->data=data;
+    ptr->next=prevnode->next;
+    prevnode->next=ptr;
+    return prevnode;
 }
 int main()
 {
@@ -76,10 +87,12 @@ int main()
     fourth->next=NULL;
 
     linkedlisttraversal(head);
-    head=insertatbeginning(head,12);
+    insertatbeginning(head,12);  //case 1
     linkedlisttraversal(head);
-    insertinbetween(head,100,2);
+    insertinbetween(head,100,2); //CASE 2
     linkedlisttraversal(head);
-    insertatend(head,200);
+    insertatend(head,200);       //CASE 3
+    linkedlisttraversal(head); 
+    insertafternode(head,second,300);  //CASE 4
     linkedlisttraversal(head);
 }

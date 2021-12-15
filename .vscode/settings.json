@@ -9,6 +9,13 @@
         "Binary_Search.C": "cpp",
         "linked_list.C": "cpp",
         "linked_list1.C": "cpp",
-        "linked_list_insertion.C": "cpp"
+        "linked_list_insertion.C": "cpp",
+        "linked_list_deletion.C": "cpp",
+        "Circular_linked_list.C": "cpp",
+        "stack_implementation.C": "cpp",
+        "peek_operation_in_stack.C": "cpp",
+        "stack_top_bottom.C": "cpp",
+        "stack_implement_using_linkedlist.C": "cpp",
+        "stack_operations_using_linkedlist.C": "cpp"
     }
 }
