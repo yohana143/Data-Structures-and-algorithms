@@ -16,6 +16,15 @@
         "peek_operation_in_stack.C": "cpp",
         "stack_top_bottom.C": "cpp",
         "stack_implement_using_linkedlist.C": "cpp",
-        "stack_operations_using_linkedlist.C": "cpp"
+        "stack_operations_using_linkedlist.C": "cpp",
+        "stack_paranthesis_matching.C": "cpp",
+        "multi-paranthesis-matching-stack.C": "cpp",
+        "stack_infix_to_postfix.C": "cpp",
+        "Queue_enqueue_dequeue.C": "cpp",
+        "Queue_circular_queue.C": "cpp",
+        "Queue_using_linked_list.C": "cpp",
+        "sorting_algo_bubble_sorting.C": "cpp",
+        "sorting_algo_insertion_sorting.C": "cpp",
+        "sorting_algo_selection_sorting.C": "cpp"
     }
 }
